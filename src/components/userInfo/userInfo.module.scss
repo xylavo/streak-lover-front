@@ -1,0 +1,56 @@
+.userInfo {
+  font-family: "Merriweather Sans", sans-serif;
+  padding: 20px;
+  width: 100%;
+  margin-left: 20px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #343a40;
+  }
+
+  .userGrade {
+    background: #f8f9fa;
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-bottom: 30px;
+
+    p {
+      font-size: 18px;
+      margin: 5px 0;
+
+      strong {
+        color: #495057;
+      }
+    }
+  }
+
+  .notificationSettings {
+    h3 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    select{
+      margin-top: 10px;
+      height: 40px;
+      font-size: 16px;
+    }
+
+    .btn {
+      margin-top: 15px;
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  }
+}

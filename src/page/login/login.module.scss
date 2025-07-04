@@ -1,0 +1,26 @@
+.loginContext{
+    font-family: "Merriweather Sans", sans-serif;
+    .form{
+        margin-bottom: 20px;
+    }
+    .loginButton{
+        border: 1px solid #777;
+        border-radius: 180px;
+        width: 175px;
+        height: 40px;
+        max-width: 100%;
+        margin: auto;
+        margin-top: 10px;
+        cursor: pointer;
+        background-color: #fff;
+        color: #000;
+        &.gmail{
+            border: none;
+        }
+    }
+    .password{
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+    }
+}

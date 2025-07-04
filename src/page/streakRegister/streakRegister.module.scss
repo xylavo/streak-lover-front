@@ -1,0 +1,91 @@
+.scheduleFormContainer {
+    position: relative;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Merriweather Sans", sans-serif;
+  }
+  
+  .backButton{
+    background: none;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 1;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  textarea {
+    padding: 10px !important;
+    margin-bottom: 20px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 5px !important;
+  }
+
+  input[type="text"]:focus, textarea:focus {
+    outline: none !important;
+    border: 2px solid #007bff !important; /* Add border highlight */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5) !important; /* Add subtle shadow */
+  }
+  
+  textarea {
+    resize: none !important;
+    height: 100px !important;
+  }
+  
+  .checkboxGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+  
+  .checkboxLabel {
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .submitButton {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submitButton:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    background-color: #0056b3; /* Darken color on hover */
+  }
+  
+  .submitButton:active {
+    transform: scale(0.98); /* Slightly shrink on click */
+  }
+  

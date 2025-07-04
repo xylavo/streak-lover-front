@@ -1,0 +1,66 @@
+.container {
+  font-family: "Merriweather Sans", sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .streakBox {
+    display: flex;
+    direction: rtl;
+    overflow: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 및 Edge */
+  }
+
+  .realContainer{
+    position: relative;
+  }
+ 
+  .isDim::before {
+    content: '';
+    position: absolute;
+    top: var(--bs-card-spacer-y);
+    left: var(--bs-card-spacer-x);
+    width: 20px;  /* 그림자가 적용될 영역의 너비 */
+    height: calc(100% - var(--bs-card-spacer-y) * 2);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), transparent); /* 왼쪽에서 오른쪽으로 흐려지는 그림자 */
+    z-index: 1;  /* streak 그래프 위에 나타나도록 설정 */
+  }
+
+  .streak {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    margin: auto;
+  }
+  
+  .baseRow {
+    display: flex;
+    flex-direction: column;
+    .row{
+        display: flex;
+        flex-direction: row-reverse;
+        &.light{
+          background-color: rgba(255, 199, 0, 0.5);
+        }
+    }
+  }
+  
+  .block {
+    margin: 2px;
+    width: 13px;
+    height: 13px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    &.none{
+      display: none;
+    }
+  }
+  
+  .block:hover {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  }
+  
